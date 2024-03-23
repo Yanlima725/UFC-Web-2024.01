@@ -1,4 +1,12 @@
 // // Atividade 01
+// import Pai from "./components/atividade01/questao01/01Pai";
+// import * as PC from "./components/atividade01/02MeuPC.jsx";
+// import {
+//   Hero,
+//   Enemy,
+//   Arena,
+//   World,
+// } from "./components/atividade01/03Batalha.jsx";
 // function App() {
 //   return (
 //     <div>

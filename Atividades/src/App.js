@@ -19,12 +19,14 @@
 //import Estado from "./components/06Estados/Estado";
 //import Pokemon from "./components/06Estados/Pokemon";
 //import { CompA } from "./components/08Context/CompContexto";
-import PokemonPrincipal from "./components/09PokemonContext/PokemonPrincipal";
+//import PokemonPrincipal from "./components/09PokemonContext/PokemonPrincipal";
+//import FunctionContextA from "./components/atividade02/FunctionContextA";
+import ComponenteAvo from "./components/atividade02/02Pokemon/ComponenteAvo";
 
 function App() {
   return (
     <div>
-        <PokemonPrincipal />
+        <ComponenteAvo />
     </div>
   );
 }

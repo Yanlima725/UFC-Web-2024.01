@@ -1,0 +1,35 @@
+**Como o uso de Contextos pode resolver o problema de PROPS DRILLING**
+
+Props drilling ocorre quando precisamos passar dados por vários níveis de componentes, mesmo que apenas o componente mais profundo precise desses dados. Isso pode resultar em código confuso e difícil de manter.
+
+**Exemplo de Contexto Resolvente:**
+
+Podemos criar um Contexto para armazenar os dados que precisamos compartilhar. Por exemplo, se temos uma árvore de componentes onde o componente A possui os dados que o componente D precisa, podemos criar um contexto em A e usar o `Provider` para que D possa acessar esses dados diretamente.
+
+*javascript*
+import React, { createContext, useContext } from 'react';
+
+// Criando o contexto
+const DataContext = createContext();
+
+// Componente A
+const A = () => {
+  const data = { name: 'Yan Lima', age: 20 };
+  return (
+    <DataContext.Provider value={data}>
+      <B />
+    </DataContext.Provider>
+  );
+};
+
+// Componente B
+const B = () => <C />;
+
+// Componente C
+const C = () => <D />;
+
+//Componente D acessa o valor do contexto diretamente
+const D = () => {
+  const data = useContext(DataContext);
+  return <p>Nome: {data.name}, Idade: {data.age}</p>;
+};

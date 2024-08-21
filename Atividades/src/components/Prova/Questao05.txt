@@ -2,7 +2,7 @@
 
 Props drilling ocorre quando precisamos passar dados por vários níveis de componentes, mesmo que apenas o componente mais profundo precise desses dados. Isso pode resultar em código confuso e difícil de manter.
 
-**Exemplo de Contexto Resolvente:**
+**Exemplo de Contexto que pode resolver:**
 
 Podemos criar um Contexto para armazenar os dados que precisamos compartilhar. Por exemplo, se temos uma árvore de componentes onde o componente A possui os dados que o componente D precisa, podemos criar um contexto em A e usar o `Provider` para que D possa acessar esses dados diretamente.
 

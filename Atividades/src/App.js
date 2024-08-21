@@ -21,12 +21,19 @@
 //import { CompA } from "./components/08Context/CompContexto";
 //import PokemonPrincipal from "./components/09PokemonContext/PokemonPrincipal";
 //import FunctionContextA from "./components/atividade02/FunctionContextA";
-import ComponenteAvo from "./components/atividade02/02Pokemon/ComponenteAvo";
+//import ComponenteAvo from "./components/atividade02/02Pokemon/ComponenteAvo";
+import Questao01A from "./components/Prova/Questao01";
+import Questao02 from "./components/Prova/Questao02";
+import Questao03 from "./components/Prova/Questao03";
+import Questao04 from "./components/Prova/Questao04";
 
 function App() {
   return (
     <div>
-        <ComponenteAvo />
+        <Questao01A />
+        <Questao02 />
+        <Questao04 />
+        <Questao04 />
     </div>
   );
 }
